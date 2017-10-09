@@ -1,0 +1,48 @@
+{
+  "name": "ethical-app",
+  "version": "0.0.1",
+  "description": "Boilerplate App for the Ethical Framework.",
+  "main": "./dist/node/server.js",
+  "scripts": {
+    "dev": "node dev/entry.js && NODE_ENV=development node dist/node/server.js"
+  },
+  "author": "m-a-r-c-e-l-i-n-o <me@marceli.no>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethically/ethical-app.git"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "ethical-composer-emitter-watcher": "0.0.0",
+    "ethical-composer-middleware-babel": "0.0.0",
+    "ethical-composer-middleware-file-system": "0.0.0",
+    "ethical-composer-middleware-route": "0.0.0",
+    "ethical-composer-utility": "0.0.0",
+    "ethical-react-component-higher-order-promise": "0.0.0",
+    "ethical-react-component-provider-promise": "0.0.0",
+    "ethical-react-component-root": "0.0.0",
+    "ethical-server-middleware-module-supplier": "0.0.1",
+    "ethical-server-middleware-react-redux": "0.0.0",
+    "ethical-server-middleware-static": "0.0.0",
+    "ethical-utility-is-node": "0.0.0",
+    "ethical-utility-server": "0.0.0",
+    "nodemon": "^1.12.1",
+    "nutra": "0.0.14",
+    "nutra-jasmine-coverage-babel-preset": "0.0.10"
+  },
+  "dependencies": {
+    "core-js": "^2.5.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.6.1",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  }
+}
