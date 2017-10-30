@@ -1,6 +1,6 @@
 {
   "name": "ethical-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Boilerplate App for the Ethical Framework.",
   "main": "./dist/node/server.js",
   "scripts": {
@@ -11,6 +11,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ethically/ethical-app.git"
+  },
+  "engines": {
+    "node" : ">=7.6",
+    "npm" : ">=3"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
