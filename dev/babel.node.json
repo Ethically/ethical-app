@@ -4,12 +4,12 @@
             "env",
             {
                 "targets": {
-                    "node": "7.5"
+                    "node": "8.9"
                 },
-                "debug": true,
                 "useBuiltIns": true
             }
-        ]
+        ],
+        "react"
     ],
     "plugins": [
         [ "transform-object-rest-spread", { "useBuiltIns": true } ]

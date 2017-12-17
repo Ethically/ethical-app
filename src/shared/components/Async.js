@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import promise from 'ethical-react-component-higher-order-promise'
+import promise from 'ethical/react/promise'
 
 const Async = ({ promise, dispatch, welcome }) => {
 

@@ -6,7 +6,6 @@
                 "targets": {
                     "browsers": ["ie >= 11"]
                 },
-                "debug": false,
                 "useBuiltIns": true
             }
         ],
