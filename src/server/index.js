@@ -14,7 +14,7 @@ export default (
     .use(reactRedux({
         layout: './dist/server/Layout.js',
         routes: './dist/shared/Routes.js',
-        reducers: './dist/shared/reducers/index.js'
+        store: './dist/shared/utilities/store.js'
     }))
     .listen()
 )
