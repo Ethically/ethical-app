@@ -5,6 +5,7 @@ const { series, parallel } = require('ethical/orche')
 const babel = require('ethical/orche/babel')
 const file = require('ethical/orche/file')
 const lazy = require('ethical/orche/lazy')
+const rename = require('ethical/orche/rename')
 const route = require('ethical/orche/route')
 const setup = require('ethical/orche/setup')
 const server = require('ethical/orche/server')
@@ -58,7 +59,12 @@ const init = async () => {
                 parallel(transpileBrowserJSFiles, transpileNodeJSFiles)
             ),
             series(
-                state({ filter: ['RENAMED', 'DELETED'] }),
+                state({ filter: ['RENAMED'] }),
+                rename({ dest: 'dist', base: 'src' }),
+                refreshServer
+            ),
+            series(
+                state({ filter: ['DELETED'] }),
                 refreshServer
             )
         ),
