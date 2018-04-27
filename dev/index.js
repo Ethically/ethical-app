@@ -31,7 +31,7 @@ const init = async () => {
         file({ dest: 'dist', base: 'src' }),
         series(
             route('src/shared/components/**/*.js'),
-            lazy()
+            lazy({ dest: 'dist', base: 'src' })
         ),
         refreshServer
     )
